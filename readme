@@ -1,0 +1,33 @@
+======================================================================
+National Chung Cheng Univeristy 
+=======================================================================
+
+Homework#4: HTML5 Exercise 
+Due date: May 21, 2015
+Class name: WWW Technologies and Applications 2015
+Student name: 黃韻文
+Student ID  : 400410048
+
+Main Homework Page: "http://dmplus.cs.ccu.edu.tw/~s400410048/hywpage.html"
+
+=======================================================================
+Testing Environment:
+=======================================================================
+
+These codes are tested on 1 browsers: chrome (version 41.0.2272.89m) 
+OS: windows 7 
+
+=======================================================================
+Description:
+=======================================================================
+
+This homework includes following files
+
+- index.html		(main page)
+- js/  			(js folder, include javascript files)
+- css/			(css folder, include css files)
+- fonts/  		(boostrap related foler)
+- MarioJump.ogg		(sound effect file)
+- CoinSound.ogg 	(sound effect file)
+
+To test the program, go to Main Homework Page  

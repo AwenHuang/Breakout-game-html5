@@ -1,0 +1,208 @@
+html,body {
+	background:white;
+	margin:0;
+	/*cursor:none;*/
+}
+
+p {
+  
+  text-align: center;
+  color:white;
+}
+span.title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+#rankBoard {
+
+  color:white;
+}
+.ranking {
+  position: fixed;
+  left:52px;
+  font-size:20px;
+  
+
+}
+.name {
+  position: relative;
+  left:-5px;
+  font-size:20px;
+  color:white;
+ 
+}
+
+.score {
+  position: fixed; 
+  right:80px; 
+  font-size:20px;
+  color:white;
+  
+
+}
+
+.ball {
+	position:fixed;
+	border-radius:100%;
+	background:black;
+}
+.paddle {
+	position:fixed; 
+	
+	left: 50%;
+  
+	bottom:12%;
+	border:3px solid black;
+	border-radius:8px;
+	z-index:100;
+  
+}
+
+#start {
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+ 	
+}
+
+#restart {
+  display:none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+#rank {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+}
+#game-canvas {
+	margin: 0 auto;
+	image-rendering: optimizeSpeed;
+  	image-rendering: -moz-crisp-edges;
+  	image-rendering: -webkit-optimize-contrast;
+  	image-rendering: optimize-contrast
+}
+
+/* ---  button features --- */
+.btn {
+  width: 140px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size:24px;
+  letter-spacing: 2px;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.blue {
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.blue:hover {
+  background-color: #6FC6FF;
+}
+
+.green {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.green:hover {
+  background-color: #48E68B;
+}
+
+.red {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.red:hover {
+	color: white;
+  background-color: #FF6656;
+}
+
+.purple {
+  background-color: #9b59b6;
+  box-shadow: 0px 5px 0px 0px #82409D;
+}
+
+.purple:hover {
+  background-color: #B573D0;
+}
+
+.orange {
+  background-color: #e67e22;
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.orange:hover {
+  background-color: #FF983C;
+}
+
+.yellow {
+  background-color: #f1c40f;
+  box-shadow: 0px 5px 0px 0px #D8AB00;
+}
+
+.yellow:hover {
+	color: white;
+  background-color: #FFDE29;
+}
+
+
+
+/* -- pop window ---*/
+
+.record-popup{
+  display:none;
+  opacity:1;
+
+  height: 420px;
+  width: 400px;
+  background: #333;
+  
+  border: 2px solid #ddd;
+  
+  font-size: 1.2em;
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  
+  box-shadow: 0px 0px 20px #999;
+  -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+  border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+img.btn_close {
+  float: right; 
+  margin: -28px -28px 0 0;
+}
+
+#mask {
+   
+}

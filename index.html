@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
+	<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	 
+	<title>Breakout game </title>
+	<script>
+		$(function () {
+			// button's hide and show control 
+			$("#startButton").click(function() {
+	        	$("#start").hide();
+	        	$("#restart").hide();
+			});
+
+			$("#restartButton").click(function() {
+	        	$("#restart").hide();
+			});
+
+			$("#rankButton").click(function() {
+	        	$("#record-box").show();
+
+			});
+			
+			$("#close").click(function() {
+				$("#record-box").hide();
+				$("#rankBoard").html("");
+			});
+
+			// set canvas width and height match to current window
+			$("#game-canvas").attr("width",$(document).width());
+			$("#game-canvas").attr("height",$(document).height()-5);
+
+			
+		});
+
+	</script>
+	 
+</head>
+
+<body>
+
+	<!-- mask for fadein background -->
+	<div id="mask">
+	<canvas id="game-canvas" width="" height=""></canvas>
+	<div class="ball" style="width:28px;height:28px;" id="ball"></div>
+	<div class="paddle" style="width:125px;height:8px;" id="paddle"></div>
+	</div>
+
+	<div id="start"> 
+	<button id="startButton" type="button" class="btn red" onClick="start()">Start</button>
+	</div>
+
+	<div id="restart"> 
+	<button id="restartButton" type="button" class="btn red" onClick="start()">Restart</button>
+	</div>
+
+	<div id="rank">
+	<button id="rankButton" type="button" class="btn red" onClick="Rank()">Rank</button>
+	</div>
+
+
+
+	<div id="record-box" class="record-popup">
+        <a href="#" id="close"><img src="css/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+         <p><span class="title">Rank</span><span class="title">Name</span><span class="title">Score</span></p>
+         <div id="rankBoard"></div>
+         <!-- <p><span id="ranking">Rank</span><span id="name"></span><span id="score"></span></p> -->	
+    </div> 
+	
+
+</body>
+
+</html>
