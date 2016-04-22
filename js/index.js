@@ -210,10 +210,8 @@ function start(){
   }
 
   function startGame(){
-
-
-     document.getElementById("mask").style.opacity = "1";
-     document.getElementById("rank").style.display = "none";
+    document.getElementById("mask").style.opacity = "1";
+    document.getElementById("rank").style.display = "none";
 
     // call the animate() function every 100ms until clearInterval(gameloop) is called
     gameloop = setInterval(animate,10);
@@ -248,8 +246,7 @@ function start(){
   function endGame(){
     player_name = prompt("You get "+points+"point(s). Please input your name. (Can't not be empty)");
 
-    while(player_name == " "){
-
+    while(player_name == ""){
       player_name = prompt("You get "+points+"point(s). Please input your name. (Can't not be empty)");
     }
     // if Players item is empty
